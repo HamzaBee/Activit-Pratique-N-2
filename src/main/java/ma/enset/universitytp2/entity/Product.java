@@ -1,9 +1,6 @@
 package ma.enset.universitytp2.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
+@Table(name = "PRODUITS")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
